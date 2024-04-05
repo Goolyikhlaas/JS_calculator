@@ -1,19 +1,20 @@
-const display = document.getElementById("display");
+let display = document.getElementById('display');
 
-function appendToDisplay(input){
-    display.value += input;
+// Appends the clicked value to the display
+function appendToDisplay(value) {
+    display.value += value;
 }
 
-function clearDisplay(){
-    display.value = "";
+// Clears the display
+function clearDisplay() {
+    display.value = '';
 }
 
-function calculator(){
-    try{
-        display.value = eval(display.value)
+// Calculates the expression and updates the display
+function calculate() {
+    try {
+        display.value = eval(display.value); // Evaluates the expression
+    } catch (error) {
+        display.value = 'Error'; // Displays error if the expression is invalid
     }
-    catch(error){
-        display.value = "Error";
-    }
-    
 }
