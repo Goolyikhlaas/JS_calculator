@@ -9,8 +9,9 @@
 <body>
 
     <div id="calculator">
-        <input id="display" readonly> 
-        <div id="keys">button
+        <input id="display" readonly> <!-- Display for the calculator -->
+        <div id="keys">
+            <!-- Buttons for digits and operators -->
             <button onclick="appendToDisplay('+')" class="operator-btn">+</button>
             <button onclick="appendToDisplay('7')">7</button>
             <button onclick="appendToDisplay('8')">8</button>
@@ -26,15 +27,10 @@
             <button onclick="appendToDisplay('/')" class="operator-btn">/</button>
             <button onclick="appendToDisplay('0')">0</button>
             <button onclick="appendToDisplay('.')">.</button>
-            <button onclick="calculate()"></button>
-            <button onclick="clearDiplay()">C</button>
-
+            <button onclick="calculate()">=</button> 
+            <button onclick="clearDisplay()">C</button> 
         </div>
-
     </div>
-    
-
-
 
     <script src="script.js"></script>
 </body>
