@@ -51,3 +51,15 @@ button:hover{
 button:active{
     background-color: #938888;
 }
+
+.operator-btn{
+    background-color: #f2a950;
+}
+
+.operator-btn:hover{
+    background-color: #f9bb6f;
+}
+
+.operator-btn:active{
+    background-color: #f9c280;
+}
