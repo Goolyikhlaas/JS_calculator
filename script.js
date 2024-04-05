@@ -9,5 +9,11 @@ function clearDisplay(){
 }
 
 function calculator(){
-
+    try{
+        display.value = eval(display.value)
+    }
+    catch(error){
+        display.value = "Error";
+    }
+    
 }
